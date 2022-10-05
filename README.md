@@ -78,6 +78,10 @@ _Note_: Make sure you don't have a whitespace in the current directory path, or 
 
 - `Step 5`: Start the server
 
+```bash
+bundle exec jekyll serve
+```
+
 ### Linux
 
 - `Step 1`: Install Ruby
