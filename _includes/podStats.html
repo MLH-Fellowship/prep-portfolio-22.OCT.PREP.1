@@ -1,0 +1,33 @@
+<h2>Projects</h2>
+<div class="card-container">
+    <div id="main"></div>
+</div>
+
+<script>
+    const contributionFetch = fetch("https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.OCT.PREP.1/contributors");
+
+    const main = document.getElementById("main");
+    main.innerHTML = "<p>Loading...";
+
+    contributionFetch
+        .then((data) => {
+            return data.json();
+        }).then((resp) => {
+            let contributorsList = [];
+            for (const ele of resp) {
+                const temp = {
+                    'username': ele.login,
+                    'avatarUrl': ele.avatar_url,
+                    'profileUrl': ele.url,
+                    'contributions': ele.contributions
+                }
+                contributorsList.push(temp);
+            };
+            main.innerHTML = displayFetch(contributorsList);
+        })
+        .catch((error) => console.log(error));
+
+    function displayFetch(records) {
+
+    }
+</script>
