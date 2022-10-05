@@ -2,12 +2,49 @@
 
 This is a Jekyll website template designed for Prep Fellows.
 
-### MacOS
+## Project Setup
 
 **Pre-requisites**:
 
 - [rvm](https://rvm.io/rvm/install)
-- [Homebrew](https://brew.sh/)
+
+Follow the steps below to setup the portfolio on your local machine according to the operating system you are using.
+
+### Windows
+
+- `Step 1`: Install Ruby
+
+_You can skip this step if you have Ruby installed on your system. Make sure it is the latest stable version._
+
+Open the link below to install Ruby on your system.
+
+https://rubyinstaller.org/
+
+- `Step 2`: Install the Bundler
+
+_You can skip this if you have the bundler installed on your system. Make sure it is the latest stable version._
+
+Run the following command on Powershell.
+
+```bash
+gem install bundler
+```
+
+- `Step 3`: Install the dependencies
+
+```bash
+bundle install --path vendor/bundle
+```
+
+_Note_: The **Gemfile.lock** may cause issues with the installation of dependencies. If you face this issue, try deleting the **Gemfile.lock** file and repeat the command above.
+
+- `Step 4`: Start the server
+
+```bash
+bundle exec jekyll serve
+```
+
+### MacOS
 
 _Note:_ MacOs comes with pre-installed ruby **NEVER** use the pre-installed **ruby** for the project work, [here's why](https://www.moncefbelyamani.com/why-you-shouldn-t-use-the-system-ruby-to-install-gems-on-a-mac/).
 
@@ -39,7 +76,38 @@ bundle install
 
 _Note_: Make sure you don't have a whitespace in the current directory path, or it might lead to [this error](https://github.com/ixkaito/frasco/issues/30)
 
-- `Step 5`: Start the server
+- `Step 5`: Start the **server**
+
+### Linux
+
+- `Step 1`: Install Ruby
+
+_You can skip this step if you have Ruby installed on your system. Make sure it is the latest stable version._
+
+Run the following commands on the terminal.
+
+```bash
+sudo apt-get update
+sudo apt-get install ruby ruby-dev
+```
+
+- `Step 2`: Install the Bundler
+
+_You can skip this if you have the bundler installed on your system. Make sure it is the latest stable version._
+
+Run the following command on Powershell.
+
+```bash
+sudo gem install bundler
+```
+
+- `Step 3`: Install the dependencies
+
+```bash
+bundle install --path vendor/bundle
+```
+
+- `Step 4`: Start the server
 
 ```bash
 bundle exec jekyll serve
