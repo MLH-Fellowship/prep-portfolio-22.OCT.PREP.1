@@ -13,6 +13,7 @@ _You can skip this step if you have Ruby installed on your system. Make sure it 
 #### Windows
 
 Open the link below to install Ruby on your system.
+
 https://rubyinstaller.org/
 
 #### MacOS
