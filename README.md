@@ -76,7 +76,7 @@ bundle install
 
 _Note_: Make sure you don't have a whitespace in the current directory path, or it might lead to [this error](https://github.com/ixkaito/frasco/issues/30)
 
-- `Step 5`: Start the **server**
+- `Step 5`: Start the server
 
 ### Linux
 
