@@ -40,6 +40,48 @@ _Note_: The **Gemfile.lock** may cause issues with the installation of dependenc
 bundle exec jekyll serve
 ```
 
+### MacOS
+
+**Pre-requisites**:
+
+- [rvm](https://rvm.io/rvm/install)
+
+_Note:_ MacOs comes with pre-installed ruby **NEVER** use the pre-installed **ruby** for the project work, [here's why](https://www.moncefbelyamani.com/why-you-shouldn-t-use-the-system-ruby-to-install-gems-on-a-mac/).
+
+Follow the steps below to install a separate ruby and setup the entire project **locally**.
+
+- `Step 1`: Installing ruby using rvm
+
+```bash
+rvm install ruby
+```
+
+- `Step 2`: Make the ruby installed using rvm the **default** ruby
+
+```bash
+rvm --default use ruby
+```
+
+- `Step 3`: Install [bundler](https://bundler.io/)
+
+```bash
+gem install bundler
+```
+
+- `Step 4:`: Install dependencies
+
+```bash
+bundle install
+```
+
+_Note_: Make sure you don't have a whitespace in the current directory path, or it might lead to [this error](https://github.com/ixkaito/frasco/issues/30)
+
+- `Step 5`: Start the server
+
+```bash
+bundle exec jekyll serve
+```
+
 ### Linux
 
 - `Step 1`: Install Ruby
