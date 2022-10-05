@@ -2,44 +2,90 @@
 
 This is a Jekyll website template designed for Prep Fellows.
 
-### MacOS
+## Project Setup
+
+Follow the steps below to setup the portfolio on your local machine according to the operating system you are using.
+
+### Step 1: Install Ruby
+
+_You can skip this step if you have Ruby installed on your system. Make sure it is the latest stable version._
+
+#### Windows
+
+Open the link below to install Ruby on your system.
+https://rubyinstaller.org/
+
+#### MacOS
 
 **Pre-requisites**:
 
 - [rvm](https://rvm.io/rvm/install)
 - [Homebrew](https://brew.sh/)
 
-_Note:_ MacOs comes with pre-installed ruby **NEVER** use the pre-installed **ruby** for the project work, [here's why](https://www.moncefbelyamani.com/why-you-shouldn-t-use-the-system-ruby-to-install-gems-on-a-mac/).
+_Note:_ MacOs comes with pre-installed Ruby **NEVER** use the pre-installed **Ruby** for the project work, [here's why](https://www.moncefbelyamani.com/why-you-shouldn-t-use-the-system-ruby-to-install-gems-on-a-mac/).
 
 Follow the steps below to install a separate ruby and setup the entire project **locally**.
 
-- `Step 1`: Installing ruby using rvm
+- Installing ruby using rvm
 
 ```bash
 rvm install ruby
 ```
 
-- `Step 2`: Make the ruby installed using rvm the **default** ruby
+- Make the ruby installed using rvm the **default** ruby
 
 ```bash
 rvm --default use ruby
 ```
 
-- `Step 3`: Install [bundler](https://bundler.io/)
+#### Linux
+
+Run the following commands in your terminal.
+
+```bash
+sudo apt-get update
+sudo apt-get install ruby ruby-dev
+```
+
+### Step 2: Install the Bundler
+
+_You can skip this if you have the bundler installed on your system. Make sure it is the latest stable version._
+
+#### Windows
+
+Run the following command on Powershell.
 
 ```bash
 gem install bundler
 ```
 
-- `Step 4:`: Install dependencies
+#### MacOS
+
+```bash
+gem install bundler
+```
+
+_Note_: Make sure you don't have a whitespace in the current directory path, or it might lead to [this error](https://github.com/ixkaito/frasco/issues/30)
+
+#### Linux
+
+```bash
+sudo gem install bundler
+```
+
+### Step 3: Start the project
+
+Run the following commands on your terminal. _For Windows use Powershell._
+
+#### Install the dependencies
 
 ```bash
 bundle install
 ```
 
-_Note_: Make sure you don't have a whitespace in the current directory path, or it might lead to [this error](https://github.com/ixkaito/frasco/issues/30)
+_Note_: The **Gemfile.lock** may cause issues with the installation of dependencies. If you face this issue, try deleting the **Gemfile.lock** file and repeat the command above.
 
-- `Step 5`: Start the server
+#### Start the server
 
 ```bash
 bundle exec jekyll serve
@@ -106,13 +152,4 @@ layout: page
   event: MLH Prep - Batch 4.5
   date: Summer 2021
   page-name: project
-```
-
-## Development
-
-If you want to test it locally or add some new features, run the below commands. Make sure to have Ruby and Bundler installed.
-
-```
-bundle install --path vendor/bundle
-bundle exec jekyll serve
 ```
