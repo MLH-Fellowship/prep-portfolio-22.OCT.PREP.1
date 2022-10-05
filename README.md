@@ -99,7 +99,7 @@ sudo apt-get install ruby ruby-dev
 
 _You can skip this if you have the bundler installed on your system. Make sure it is the latest stable version._
 
-Run the following command on Powershell.
+Run the following command on terminal.
 
 ```bash
 sudo gem install bundler
