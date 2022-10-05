@@ -4,10 +4,6 @@ This is a Jekyll website template designed for Prep Fellows.
 
 ## Project Setup
 
-**Pre-requisites**:
-
-- [rvm](https://rvm.io/rvm/install)
-
 Follow the steps below to setup the portfolio on your local machine according to the operating system you are using.
 
 ### Windows
@@ -45,6 +41,10 @@ bundle exec jekyll serve
 ```
 
 ### MacOS
+
+**Pre-requisites**:
+
+- [rvm](https://rvm.io/rvm/install)
 
 _Note:_ MacOs comes with pre-installed ruby **NEVER** use the pre-installed **ruby** for the project work, [here's why](https://www.moncefbelyamani.com/why-you-shouldn-t-use-the-system-ruby-to-install-gems-on-a-mac/).
 
