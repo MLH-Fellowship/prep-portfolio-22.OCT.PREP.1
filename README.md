@@ -68,7 +68,7 @@ rvm --default use ruby
 gem install bundler
 ```
 
-- `Step 4:`: Install dependencies
+- `Step 4:` Install dependencies
 
 ```bash
 bundle install
@@ -178,13 +178,4 @@ layout: page
   event: MLH Prep - Batch 4.5
   date: Summer 2021
   page-name: project
-```
-
-## Development
-
-If you want to test it locally or add some new features, run the below commands. Make sure to have Ruby and Bundler installed.
-
-```
-bundle install --path vendor/bundle
-bundle exec jekyll serve
 ```
