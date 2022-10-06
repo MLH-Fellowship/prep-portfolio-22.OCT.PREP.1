@@ -31,13 +31,14 @@
 
 
 body {
-    background-color: #f5f5f9;
+    background-color: var(--background-color);
 }
 h2 {
     margin-bottom: 20px;
     margin-top: 20px;
     font-weight: 700;
     text-align: center;
+    color: var(--heading-color);
 }
 
 .card {
@@ -45,7 +46,7 @@ h2 {
     flex-direction: row;
     align-items: center;
     margin: 20px 30px;
-    background-color: white;
+    background-color: var(--card-bg);
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
@@ -56,6 +57,7 @@ a {
 }
 
 .info {
+    color: var(--text-color);
     p {
         margin-top: 5px;
         margin: 0px;
@@ -74,7 +76,7 @@ a {
 
     .dates {
         font-size: small;
-        color: #404040;
+        color: var(--date-color);
     }
 }
 
