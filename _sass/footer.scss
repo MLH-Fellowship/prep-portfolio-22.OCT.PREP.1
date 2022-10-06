@@ -1,0 +1,28 @@
+#footer {
+  background: #133667;
+  color: white;
+  padding: 1rem;
+  .row,
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    color: white;
+  }
+  hr {
+    background-color: white;
+    padding: 0;
+  }
+  i {
+    padding: 5px;
+  }
+  h2 {
+    text-align: left;
+  }
+  img{
+    width: 200px;
+    height: auto;
+    margin-top:10px;
+  }
+}

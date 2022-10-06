@@ -4,11 +4,21 @@
 @import 'profile';
 @import 'page';
 @import "podStats";
+@import 'footer';
 
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-family: "Open Sans", sans-serif;
+}
+
+.social-icons {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.social-icon {
+    margin-right: 0.5rem;
 }
 
 @media only screen and (max-width: 1500px) {
