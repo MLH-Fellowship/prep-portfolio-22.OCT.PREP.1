@@ -1,33 +1,62 @@
-<h2>Projects</h2>
-<div class="card-container">
-    <div id="main"></div>
+<div class="stats">
+  <div class="headline"></div>
+  <div class="statsTitle">POD STATS</div>
+  <div class="statsCards"></div>
 </div>
-
 <script>
-    const contributionFetch = fetch("https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.OCT.PREP.1/contributors");
+  //   handling data from api
 
-    const main = document.getElementById("main");
-    main.innerHTML = "<p>Loading...";
+  const contributionFetch = fetch(
+    "https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.OCT.PREP.1/contributors"
+  );
 
-    contributionFetch
-        .then((data) => {
-            return data.json();
-        }).then((resp) => {
-            let contributorsList = [];
-            for (const ele of resp) {
-                const temp = {
-                    'username': ele.login,
-                    'avatarUrl': ele.avatar_url,
-                    'profileUrl': ele.url,
-                    'contributions': ele.contributions
-                }
-                contributorsList.push(temp);
-            };
-            main.innerHTML = displayFetch(contributorsList);
-        })
-        .catch((error) => console.log(error));
+  function displayFetch(records) {
+    let username = document.querySelectorAll(".username");
+    let pic = document.querySelectorAll(".pic");
+    let contributions = document.querySelectorAll(".right");
 
-    function displayFetch(records) {
+    console.log(username[0], username);
 
+    console.log(records.length);
+    for (let i = 0; i < records.length; i++) {
+      username[i].innerHTML = `${records[i].username}`;
+      pic[i].style.backgroundImage = `url(${records[i].avatarUrl})`;
+      contributions[i].innerHTML = `${records[i].contributions}`;
     }
+  }
+
+  contributionFetch
+    .then((data) => {
+      return data.json();
+    })
+    .then((resp) => {
+      let contributorsList = [];
+      for (const ele of resp) {
+        const temp = {
+          username: ele.login,
+          avatarUrl: ele.avatar_url,
+          statsProfileUrl: ele.url,
+          contributions: ele.contributions,
+        };
+        contributorsList.push(temp);
+      }
+
+      // adding 15 statsCards
+      let statsCards = document.getElementsByClassName("statsCards")[0];
+      for (let i = 0; i < contributorsList.length; i++) {
+        statsCards.innerHTML += `
+              <div class="statsCard">
+              <div class="plate">
+                  <div class="statsProfile"><div class="pic" id="pic"></div></div>
+                  <div class="username" id="username">username</div>
+              </div>
+              <div class="text">
+                  <div class="left">Contributions:</div>
+                  <div class="right" id="right">07</div>
+              </div>
+              </div>`;
+      }
+      displayFetch(contributorsList);
+    })
+    .catch((error) => console.log(error));
 </script>
