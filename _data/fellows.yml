@@ -1,15 +1,19 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
+- name: Sudhanshu Kumar
+  img: Sudhanshu.jpg
+  location: Odisha, India
 
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
+- name: Lavisha Bhambri
+  img: lavisha.jpg
+  location: Haryana, India
 
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
+- name: Siddhi Bhanushali
+  img: siddhi.jpg
+  location: Mumbai, India
 
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
+- name: Divya Sri Darimisetti
+  img: divya.jpg
+  location: Visakhapatnam, India
+
+- name: Moses Varghese
+  img: moses.jpg
+  location: Dubai, UAE
