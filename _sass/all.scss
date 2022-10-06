@@ -3,6 +3,7 @@
 @import 'navbar';
 @import 'profile';
 @import 'page';
+@import "podStats";
 @import 'footer';
 
 .card-container {
@@ -40,6 +41,9 @@
 
 
 body {
+    background-color: #f5f5f9;
+    margin-bottom: 50px;
+    height: 100vh;
     background-color: var(--background-color);
     transition: 1s !important;
 }
