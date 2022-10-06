@@ -1,15 +1,19 @@
 - name: Will
   img: logo.jpg
   location: London, UK
+  page: deepayan
 
 - name: Amanda
   img: amanda.jpg
   location: New York City, USA
+  page: deepayan
 
 - name: Aaron
   img: aaron.jpg
   location: London, UK
+  page: deepayan
 
 - name: Swift
   img: swift.jpg
   location: New York City, USA
+  page: deepayan

@@ -3,7 +3,7 @@
     {% for item in site.data.fellows %}
     <div class="card">
         <div class="info">
-            <p class="title"> {{ item.name }}</p>
+            <p class="title"> <a href="/fellows/{{ item.page }}">{{ item.name }}</a></p>
             <p class="location"> {{ item.location }}</p>
             <div class="social-icons">
                 <a href="" class="social-icon"><i class="uil uil-linkedin"></i></a>
