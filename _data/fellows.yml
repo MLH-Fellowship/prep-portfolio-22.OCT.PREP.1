@@ -1,5 +1,5 @@
 - name: Sudhanshu Kumar
-  img: Sudhanshu.jpg
+  img: sudhanshu.jpg
   location: Odisha, India
   linkedin:
   github:
@@ -7,8 +7,13 @@
   resume:
 
 - name: Riffat Khan
-  img: Riffat.jpg
+  img: riffat.jpg
   location: Dubai, UAE
+  linkedin:
+  github:
+  twitter:
+  github:
+  resume:
 
 - name: Moses Varghese
   img: moses.jpg
@@ -43,7 +48,7 @@
   resume:
 
 - name: Kanchi Tank
-  img: Kanchi.jpg
+  img: kanchi.jpg
   location: Navi Mumbai, India
   linkedin:
   github:
@@ -51,7 +56,7 @@
   resume:
 
 - name: Swatishree Mahapatra
-  img: Swatishree.jpg
+  img: swatishree.jpg
   location: Berhampur, Odisha
   linkedin:
   github:
@@ -59,7 +64,7 @@
   resume:
 
 - name: Bhavneet Kaur
-  img: Bhavneet.jpg
+  img: bhavneet.jpg
   location: Mumbai, India
   linkedin:
   github:
@@ -67,8 +72,24 @@
   resume:
 
 - name: Akanksha Kushwaha
-  img: Akanksha.jpg
+  img: akanksha.jpg
   location: Noida, India
+  linkedin:
+  github:
+  twitter:
+  resume:
+
+- name: Devansu Yadav
+  img: devansu.jpg
+  location: Mumbai, India
+  linkedin:
+  github:
+  twitter:
+  resume:
+
+- name: Gaurav Gulati
+  img: gaurav.jpg
+  location: New Delhi, India
   linkedin:
   github:
   twitter:
