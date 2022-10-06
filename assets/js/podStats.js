@@ -15,19 +15,22 @@ function displayFetch(records) {
 }
 
 contributionFetch
-    .then((data) => {
-        return data.json();
-    })
-    .then((resp) => {
-        let contributorsList = [];
-        for (const ele of resp) {
-            const temp = {
-                username: ele.login,
-                avatarUrl: ele.avatar_url,
-                statsProfileUrl: ele.html_url,
-                contributions: ele.contributions,
-            };
-            contributorsList.push(temp);
+.then((data) => {
+    return data.json();
+})
+.then((resp) => {
+    let contributorsList = [];
+    const removeList = new Set(['akshitadixit', 'marcnjaramillo']);
+    for (const ele of resp) {
+            if(removeList.has(ele.login)===false){
+                const temp = {
+                    username: ele.login,
+                    avatarUrl: ele.avatar_url,
+                    statsProfileUrl: ele.html_url,
+                    contributions: ele.contributions,
+                };
+                contributorsList.push(temp);
+            }
         }
 
         // adding 15 statsCards
