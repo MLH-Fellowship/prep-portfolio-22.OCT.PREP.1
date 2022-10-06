@@ -1,15 +1,80 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
+- latitude: 27.7172
+  longitude: 85.3240
+  name: Niyoj Oli
+  img: niyoj.jpg
+  location: Jhapa, Nepal
+  github: niyoj
+  linkedin: niyoj
+  role: Fellow
 
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
+- latitude: 19.315
+  longitude: 84.794
+  name: SwatiShree Mahapatra
+  img: swati.jpg
+  location: Berhampur, Odisha
+  github: Swatishree-Mahapatra
+  linkedin: swatishree-mahapatra-a2251620a
+  role: Fellow
+ 
+- latitude: 29.288
+  longitude: 76.039
+  img: lavisha.jpg
+  name: Lavisha Bhambri
+  location: Haryana, India
+  github: lavishabhambri
+  linkedin: lavisha-bhambri-630384196
+  role: Fellow
 
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
+- latitude: 17.723289
+  longitude: 83.307610
+  img: divya.jpg
+  name: Divya Sri Darimisetti
+  location: Visakhapatnam, India
+  github: irsayvid
+  linkedin: divya-sri-darimisetti
+  role: Fellow
 
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
+- latitude: 25.204849
+  longitude: 55.270782
+  img: moses.jpg
+  name: Moses Varghese
+  location: Dubai, UAE
+  github: 
+  linkedin: 
+  role: Fellow
+
+- latitude: 19.075983
+  longitude: 72.877655
+  img: siddhi.jpg
+  name: Siddhi Bhanushali
+  location: Mumbai, India
+  github: siddhi-244
+  linkedin: siddhi-bhanushali 
+  role: Fellow
+    
+- latitude: 19.075983
+  longitude: 72.877655
+  img: bhavneet.jpeg
+  name: Bhavneet Kaur
+  location: Mumbai, India
+  github: Bhavneet1492
+  linkedin: bhavneet-kaur-khalsa-8157a21ba
+  role: Fellow
+
+- latitude: 19.075983
+  longitude: 73.018997
+  img: kanchi.jpg
+  name: Kanchi Tank
+  location: Navi Mumbai, India
+  github: kanchitank
+  linkedin: kanchitank
+  role: Fellow
+
+- latitude: 28.535517
+  longitude: 77.391029
+  img: akanksha.jpg
+  name: Akanksha Kushwaha
+  location: Noida, India
+  github: aku1310
+  linkedin: akankshakushwaha
+  role: Fellow
