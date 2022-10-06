@@ -2,16 +2,38 @@ p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Open Sans", serif;
 }
 
+// .info:hover {
+//     color: rgb(6, 134, 225);
+// }
+
 h2 {
     font-size: large;
 }
 
 body {
-    background-color: #f5f5f9 !important;
+    --background-color: #f5f5f9;
+    --heading-color:black;
+    --text-color:black;
+    --link-color: rgb(4, 100, 255);
+    --card-bg: white;
+    --date-color: #404040;
+    --toggle-position: 0px;
+    background-color: var(--background-color) !important;
+    color: var(--text-color);
     background-size: cover;
     width: auto!important; 
     overflow-x: hidden!important;
     font-family: "Open Sans", serif;
+}
+
+body.dark {
+	--background-color: #22487d;
+    --heading-color:white;
+    --text-color: white;
+    --link-color: rgb(4, 167, 255);
+    --card-bg: #121241;
+    --date-color: white;
+    --toggle-position: 24px;
 }
 
 .banner {
@@ -41,45 +63,45 @@ body {
 .page h1 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: black;
+    color: var(--heading-color);
     margin-bottom: 0.7em;
 }
 
 .page h2 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: black;
+    color: var(--heading-color) !important;
     margin-bottom: 0.5em;
 }
 
 .page h3 {
     font-weight: 600 !important;
     text-align: left !important;
-    color: black;
+    color: var(--heading-color);
     font-size: 1.3rem;
 }
 
 .page h4 {
     font-weight: 600 !important;
     text-align: center !important;
-    color: black;
+    color: var(--heading-color);
 }
 
 .page p {
-    color: black;
+    color: var(--text-color);
     font-weight: 500;
 }
 
 .page td {
-    color: black;
+    color: var(--text-color);
 }
 
 .page th {
-    color: black;
+    color: var(--text-color);
 }
 
 .page li {
-    color: black;
+    color: var(--text-color);
 }
 
 .page a {
@@ -87,7 +109,11 @@ body {
 }
 
 .page a:hover {
-    color: #0f90fe;
+    color: rgb(0, 179, 255);
+}
+
+.social-icon:hover {
+    color: var(--link-color);
 }
 
 .page code {
@@ -95,7 +121,7 @@ body {
 }
 
 hr {
-    background-color: black;
+    background-color: var(--text-color);
     padding: 1px;
     margin-top: 1em !important;
     margin-bottom: 1em !important;
