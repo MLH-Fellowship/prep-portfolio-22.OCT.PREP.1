@@ -1,6 +1,26 @@
+- name: Sudhanshu Kumar
+  img: Sudhanshu.jpg
+  location: Odisha, India
+
 - name: Riffat Khan
   img: Riffat.jpg
   location: Dubai, UAE
+
+- name: Moses Varghese
+  img: moses.jpg
+  location: Dubai, UAE
+
+- name: Lavisha Bhambri
+  img: lavisha.jpg
+  location: Haryana, India
+
+- name: Siddhi Bhanushali
+  img: siddhi.jpg
+  location: Mumbai, India
+
+- name: Divya Sri Darimisetti
+  img: divya.jpg
+  location: Visakhapatnam, India
 
 - name: Kanchi Tank
   img: Kanchi.jpg
@@ -15,5 +35,5 @@
   location: Mumbai, India
 
 - name: Akanksha Kushwaha
-  img: Akankshajpg
+  img: Akanksha.jpg
   location: Noida, India
