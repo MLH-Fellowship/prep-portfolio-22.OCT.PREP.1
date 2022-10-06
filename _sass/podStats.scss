@@ -1,0 +1,132 @@
+.stats {
+  background: #133667;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.headline {
+  background: white;
+  width: 92%;
+  height: 1.5vh;
+  border-radius: 1000px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  align-self: flex-start;
+}
+.statsTitle {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  color: white;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 2.5rem;
+  align-self: flex-start;
+}
+.statsCards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 95vw;
+  margin-top: 1rem;
+  align-self: flex-start;
+  margin-left: 2rem;
+}
+.statsCard {
+  width: 90%;
+  height: 10rem;
+  background: #133667;
+  box-shadow: inset -1rem -1rem 2rem rgba(37, 101, 191, 0.348),
+    inset 1rem 1rem 2rem rgba(6, 33, 70, 0.756);
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.5s ease-out;
+}
+.statsCard:hover,
+.plate:hover,
+.statsProfile:hover,
+.pic:hover {
+  box-shadow: none;
+}
+.plate:hover {
+  border: 0.3rem solid #63cdd7;
+}
+.plate {
+  width: 83%;
+  height: 50%;
+  margin-top: 1.5rem;
+  background: #133667;
+  box-shadow: -0.6rem -0.6rem 1.2rem rgba(37, 101, 191, 0.2),
+    0.6rem 0.6rem 1.2rem rgba(6, 33, 70, 0.6);
+  border-radius: 0.4rem;
+  transition: 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.text {
+  height: 20%;
+  cursor: default;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #63cdd7;
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.statsProfile {
+  background: #133667;
+  box-shadow: inset -0.4rem -0.4rem 1rem rgba(37, 101, 191, 0.332),
+    inset 0.7rem 0.7rem 1rem rgba(6, 33, 70, 0.74);
+  border-radius: 42px;
+  height: 75%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-out;
+}
+.username {
+  cursor: default;
+  color: white;
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+.pic {
+  height: 60%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: url("");
+  background-position: center;
+  background-size: contain;
+  box-shadow: -5px -5px 10px rgba(37, 101, 191, 0.24),
+    5px 5px 10px rgba(0, 16, 39, 0.38);
+  border-radius: 42px;
+  transition: 0.5s ease-out;
+}
+@media only screen and (max-width: 950px) {
+  .statsCards {
+    grid-template-columns: auto auto;
+  }
+  .headline {
+    height: 1vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .statsCards {
+    grid-template-columns: auto;
+  }
+  .headline {
+    width: 85%;
+  }
+}
