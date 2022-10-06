@@ -9,10 +9,9 @@
 - name: Riffat Khan
   img: riffat.jpg
   location: Dubai, UAE
-  linkedin:
-  github:
-  twitter:
-  github:
+  linkedin: "https://www.linkedin.com/in/rk119/"
+  github: "https://github.com/rk119"
+  twitter: "https://twitter.com/_rifrof_"
   resume:
 
 - name: Moses Varghese
@@ -58,8 +57,8 @@
 - name: Swatishree Mahapatra
   img: swatishree.jpg
   location: Berhampur, Odisha
-  linkedin:
-  github:
+  linkedin: "https://www.linkedin.com/in/swatishree-mahapatra-a2251620a/"
+  github: "https://github.com/Swatishree-Mahapatra"
   twitter:
   resume:
 
@@ -67,30 +66,30 @@
   img: bhavneet.jpg
   location: Mumbai, India
   linkedin:
-  github:
+  github: "https://github.com/Bhavneet1492"
   twitter:
   resume:
 
 - name: Akanksha Kushwaha
   img: akanksha.jpg
   location: Noida, India
-  linkedin:
-  github:
+  linkedin: "https://www.linkedin.com/in/akankshakushwaha/"
+  github: "https://github.com/aku1310"
   twitter:
   resume:
 
 - name: Devansu Yadav
   img: devansu.jpg
   location: Mumbai, India
-  linkedin:
-  github:
-  twitter:
+  linkedin: "https://www.linkedin.com/in/devansu-yadav/"
+  github: "https://www.github.com/Devansu-Yadav"
+  twitter: "https://twitter.com/DevanshYtweets"
   resume:
 
 - name: Gaurav Gulati
   img: gaurav.jpg
   location: New Delhi, India
-  linkedin:
-  github:
-  twitter:
+  linkedin: "https://www.linkedin.com/in/gaurav-gulati-633b201bb/"
+  github: "https://github.com/gauravgulati15"
+  twitter: "https://twitter.com/Gorrrdiii"
   resume:
