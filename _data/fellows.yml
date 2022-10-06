@@ -1,15 +1,19 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
+- name: Riffat Khan
+  img: Riffat.jpg
+  location: Dubai, UAE
 
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
+- name: Kanchi Tank
+  img: Kanchi.jpg
+  location: Navi Mumbai, India
 
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
+- name: Swatishree Mahapatra
+  img: Swatishree.jpg
+  location: Berhampur, Odisha
 
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
+- name: Bhavneet Kaur
+  img: Bhavneet.jpg
+  location: Mumbai, India
+
+- name: Akanksha Kushwaha
+  img: Akankshajpg
+  location: Noida, India
