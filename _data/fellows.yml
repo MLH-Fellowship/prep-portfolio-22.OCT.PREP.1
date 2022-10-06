@@ -1,15 +1,26 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
+- latitude: 27.7172
+  longitude: 85.3240
+  name: Niyoj Oli
+  img: niyoj.jpg
+  location: Jhapa, Nepal
+  github: niyoj
+  linkedin: niyoj
+  role: Fellow
 
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
-
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
-
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
+- latitude: 19.315
+  longitude: 84.794
+  name: SwatiShree Mahapatra
+  img: swati.jpg
+  location: Berhampur, Odisha
+  github: Swatishree-Mahapatra
+  linkedin: swatishree-mahapatra-a2251620a
+  role: Fellow
+ 
+- latitude: 29.288
+  longitude: 76.039
+  img: lavisha.jpg
+  name: Lavisha Bhambri
+  location: Haryana, India
+  github: lavishabhambri
+  linkedin: lavisha-bhambri-630384196
+  role: Fellow
