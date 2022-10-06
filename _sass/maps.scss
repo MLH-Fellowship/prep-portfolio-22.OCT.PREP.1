@@ -1,0 +1,25 @@
+.map-wrapper {
+    width: calc(100vw - 20px);
+    height: auto;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+#map {
+    height: 400px;
+    max-width: 75vw;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.mlhMarker {
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid black;
+    z-index: 99;
+}
+
+.pinMarker {
+    position: relative;
+    z-index: -1;
+}
