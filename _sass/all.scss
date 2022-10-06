@@ -41,6 +41,7 @@
 
 body {
     background-color: var(--background-color);
+    transition: 1s !important;
 }
 h2 {
     margin-bottom: 20px;
@@ -61,8 +62,20 @@ h2 {
     font-size: 1.2em;
 }
 
+.projects .title:hover {
+  color: var(--link-color);
+}
+
+.projects .location:hover {
+  color: var(--link-color);
+}
+
 a {
-    color: black;
+    color: var(--text-color);
+}
+
+a:hover {
+  color: var(--link-color);
 }
 
 .info {

@@ -2,6 +2,10 @@ p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Open Sans", serif;
 }
 
+// .info:hover {
+//     color: rgb(6, 134, 225);
+// }
+
 h2 {
     font-size: large;
 }
@@ -10,6 +14,7 @@ body {
     --background-color: #f5f5f9;
     --heading-color:black;
     --text-color:black;
+    --link-color: rgb(4, 100, 255);
     --card-bg: white;
     --date-color: #404040;
     --toggle-position: 0px;
@@ -24,9 +29,10 @@ body {
 body.dark {
 	--background-color: #163d75;
     --heading-color:white;
-    --text-color: black;
-    --card-bg: #bdbdfd;
-    --date-color: #404040;
+    --text-color: white;
+    --link-color: rgb(4, 167, 255);
+    --card-bg: #454592;
+    --date-color: white;
     --toggle-position: 24px;
 }
 
@@ -103,7 +109,11 @@ body.dark {
 }
 
 .page a:hover {
-    color: #0f90fe;
+    color: rgb(0, 179, 255);
+}
+
+.social-icon:hover {
+    color: var(--link-color);
 }
 
 .page code {
