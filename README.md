@@ -117,6 +117,23 @@ bundle install --path vendor/bundle
 bundle exec jekyll serve
 ```
 
+### Docker Development Environment
+
+`!!! Having a running Docker Daemon is a must. !!!` <br>
+You can go ahead and get your Docker Engine from the official [Docker Website](https://docs.docker.com/engine/install/)
+
+#### Setup
+
+```console
+$ git clone https://github.com/MLH-Fellowship/prep-portfolio-22.OCT.PREP.1.git
+$ cd prep-portfolio-22.OCT.PREP.1/
+$ docker-compose up
+```
+
+The project will now be live at **localhost:4000**
+
+Since the repository gets mounted on the container, you can go ahead and start your development journey on the same repository. Simply make your changes, save them, refresh your browser to see the updated changes.
+
 ## Make your own!
 
 1. Use the Template button.
@@ -178,4 +195,22 @@ layout: page
   event: MLH Prep - Batch 4.5
   date: Summer 2021
   page-name: project
+```
+
+## Add blog posts
+
+1. Make a new `.md` file inside the `_posts` folder with naming convention `YYYY-MM-DD-blog-post-name.md` where date is represented in YYYY-MM-DD format followed by your blog title.
+2. - Add the front matter at the top of your markdown file (see below) and a square image for your thumbnail in `\assets\img\blogs` folder..
+   - Change the title to the name of your blog post, the author to your name and the img_name in front matter with your file name.
+3. Write your blog page and format it with markdown syntax!
+
+Front matter for blog post markdown file post.
+
+```
+---
+title: Your blog title
+layout: page
+author: Your name
+img_name: image-name.jpg
+---
 ```
