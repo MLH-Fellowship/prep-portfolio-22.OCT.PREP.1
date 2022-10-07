@@ -1,15 +1,15 @@
 - title: Pod Portfolio
   event: MLH Prep Pod Project
   date: Oct 2022 - PREP.1
-  page-name: project
   live: "https://prep-portfolio-22-oct-prep-1.netlify.app/"
   github: "https://github.com/MLH-Fellowship/prep-portfolio-22.OCT.PREP.1"
+  page-name: portfolio-project
 
 - title: Weather App
   event: MLH Prep Pod Project
   date: Oct 2022 - PREP.1
-  page-name: project
   live: "https://prep-project-22-oct-1.netlify.app/"
   github: "https://github.com/MLH-Fellowship/prep-project-22.OCT.PREP.1"
+  page-name: weather-project
 
 
