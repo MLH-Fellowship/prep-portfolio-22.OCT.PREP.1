@@ -97,7 +97,7 @@ a:hover {
         font-weight: bold;
     }
 
-    .location, .description {
+    .location, .description, .author {
         font-size: medium;
         font-weight: 400;
     }
@@ -117,4 +117,34 @@ a:hover {
     img {
         width: 100%;
     }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrollToTopBtn {
+  cursor: pointer;
+  
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  width: 48px;
+  
+  z-index: 1005;
+  
+  opacity: 0;
+  
+  transform: translateY(100px);
+  transition: all .5s ease;
+  
+  text-align: center;
+  font-size: 16px;
+  line-height: 48px;
+  text-decoration: none;
+}
+
+.showScrollToTopBtn {
+  opacity: 1;
+  transform: translateY(0)
 }

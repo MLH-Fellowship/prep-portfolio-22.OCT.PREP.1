@@ -5,8 +5,14 @@
     background-position: center;
 
     text-align: center;
-    height: 320px;
-    margin-bottom: 50px;
+    min-height: 60vh;
+    margin-bottom: 00px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
     h1 {
         font-size: 50px;
         font-weight: 700;
@@ -14,17 +20,16 @@
     }
     
     img {
+        object-fit: cover;
         border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 200px ;
+        height: 200px;
         display: inline;        
         padding: 20px;
+        margin: 20px;
     }
     
     .profile-picture {
         margin-bottom: 30px;
-        height: 200px;
     }
 }
