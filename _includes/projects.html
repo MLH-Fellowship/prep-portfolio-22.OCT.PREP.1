@@ -1,16 +1,28 @@
+<style>
+  .project-card{
+    display: flex;
+  }
+  .project-desc{
+    width: 350px;
+  }
+</style>
 <h2>Projects</h2>
-<div class="card-container">
+<div class="card-container project-card">
     {% for item in site.data.projects %}
     {% if item.page-name %}
     <a href="/projects/{{ item.page-name }}">
     {% else %}
     <a>
     {% endif %}
-      <div class="card projects">
+      <div class="card projects project-desc">
         <div class="info">
           <p class="title">{{ item.title }}</p>
           <p class="location">{{ item.event }}</p>
           <p class="dates">{{ item.date }}</p>
+          <div class="social-icons">
+            <a href= {{ item.github }} target="_blank" class="social-icon"><i class="uil uil-github"></i></a>
+            <a href={{ item.live }} target="_blank" class="social-icon"><i class="uil uil-globe"></i></a>
+        </div>
         </div>
       </div>
     </a>
