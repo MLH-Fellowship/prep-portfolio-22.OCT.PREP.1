@@ -5,7 +5,7 @@
     font-weight: 700 !important;
     padding-top: 10px;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -17,7 +17,7 @@
 
 .nav-content .nav-logo {
     height: 60px;
-    margin: auto;
+    // margin: auto;
 }
 
 .nav-logo {
@@ -30,12 +30,24 @@
     width: 200px;
 }
 
-.nav-content nav {
-    display: block;
+.nav-content {
+	display: flex;
     width: 100%;
     text-align: right;
     padding-top: 0px;
     padding-right: 0px;
+	margin: 1vw;
+}
+
+.one-quarter {
+	margin: 2vw;
+
+}
+
+.links {
+	display: flex;
+	width: 40vw;
+	justify-content: space-around;
 }
 
 .checkbox {

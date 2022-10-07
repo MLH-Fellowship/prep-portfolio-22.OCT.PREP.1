@@ -1,11 +1,11 @@
-<h2>Projects</h2>
+<h2 id="projects">Projects</h2>
 <div class="card-container">
-    {% for item in site.data.projects %}
-    {% if item.page-name %}
-    <a href="/projects/{{ item.page-name }}">
+  {% for item in site.data.projects %}
+  {% if item.page-name %}
+  <a href="/projects/{{ item.page-name }}">
     {% else %}
     <a>
-    {% endif %}
+      {% endif %}
       <div class="card projects">
         <div class="info">
           <p class="title">{{ item.title }}</p>
@@ -15,5 +15,4 @@
       </div>
     </a>
     {% endfor %}
-  </div>
-  
+</div>
