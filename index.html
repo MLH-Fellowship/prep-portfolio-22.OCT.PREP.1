@@ -28,7 +28,25 @@
 
         {% include podStats.html %}
 
+        <a href="#top" id="scrollToTopBtn" class="scrollToTopBtn">
+            <img src="./assets/img/icons/up-arrow.png" width="100%" />
+        </a>
+
         {% include footer.html %}
+    </div>
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn")
+        function handleScroll() {
+            let scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            
+            // show scrollToTopBtn if the user scrolled down 10% of the website view otherwise hide it 
+            if ((document.documentElement.scrollTop / scrollTotal ) > 0.10 )
+                scrollToTopBtn.classList.add("showScrollToTopBtn");
+            else 
+                scrollToTopBtn.classList.remove("showScrollToTopBtn");
+        }
+        document.addEventListener("scroll", handleScroll)
+    </script>
     </div>
 </body>
 
