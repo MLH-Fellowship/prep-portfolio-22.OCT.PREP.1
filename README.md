@@ -68,7 +68,7 @@ rvm --default use ruby
 gem install bundler
 ```
 
-- `Step 4:`: Install dependencies
+- `Step 4`: Install dependencies
 
 ```bash
 bundle install
@@ -99,7 +99,7 @@ sudo apt-get install ruby ruby-dev
 
 _You can skip this if you have the bundler installed on your system. Make sure it is the latest stable version._
 
-Run the following command on terminal.
+Run the following command on the terminal.
 
 ```bash
 sudo gem install bundler
@@ -116,18 +116,21 @@ bundle install --path vendor/bundle
 ```bash
 bundle exec jekyll serve
 ```
-### Docker Development Environment 
+
+### Docker Development Environment
 
 `!!! Having a running Docker Daemon is a must. !!!` <br>
 You can go ahead and get your Docker Engine from the official [Docker Website](https://docs.docker.com/engine/install/)
 
-#### Setup 
+#### Setup
+
 ```console
 $ git clone https://github.com/MLH-Fellowship/prep-portfolio-22.OCT.PREP.1.git
 $ cd prep-portfolio-22.OCT.PREP.1/
 $ docker-compose up
 ```
-The project will now be live at **localhost:4000** 
+
+The project will now be live at **localhost:4000**
 
 Since the repository gets mounted on the container, you can go ahead and start your development journey on the same repository. Simply make your changes, save them, refresh your browser to see the updated changes.
 
@@ -193,6 +196,7 @@ layout: page
   date: Summer 2021
   page-name: project
 ```
+
 ## Add blog posts
 
 1. Make a new `.md` file inside the `_posts` folder with naming convention `YYYY-MM-DD-blog-post-name.md` where date is represented in YYYY-MM-DD format followed by your blog title.
@@ -210,5 +214,3 @@ author: Your name
 img_name: image-name.jpg
 ---
 ```
-
-
