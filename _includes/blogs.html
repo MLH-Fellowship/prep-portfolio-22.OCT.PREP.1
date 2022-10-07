@@ -1,0 +1,17 @@
+<h2>Blogs</h2>
+<div class="card-container">
+  {% for post in site.posts %}
+    <div class="card">
+      <!-- <i class="fa-solid fa-inbox" style="padding-right: 1rem;"></i>
+       -->
+      <img src="/assets/img/blogs/{{ post.img_name }}" style="height: 50px; border-radius: 20%; margin-right: 10px;" alt="Blog image">
+      <div class="info">
+          <a href="{{ post.url }}">
+              <p class="title">{{ post.title }}</p>
+              <p class="author">by {{ post.author }}</p>
+          </a>
+          <p class="dates">Published on {{ post.date | date_to_string }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
