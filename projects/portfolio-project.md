@@ -1,5 +1,5 @@
 ---
-title: My Project
+title: Portfolio Project
 layout: page
 ---
 
