@@ -77,6 +77,39 @@ h2 {
   color: var(--link-color);
 }
 
+.project-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  // background-color: white;
+  height: 5rem;
+  width: 15rem;
+  // border-radius: 1rem;
+  border: none;
+  text-align: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  img {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-top: -0.3rem;
+  }
+}
+
+@media only screen and (min-width: 799px){
+  .back-button {
+    padding-top: 2rem;
+  }
+}
+
 a {
     color: var(--text-color);
 }
