@@ -1,13 +1,51 @@
+<style type="text/css" media="screen">
+    h1 {
+      margin: 30px 0;
+      font-size: 4em;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    .icon-description{
+      display: flex;
+    }
+    .icons{
+        margin-right: 4px;
+        font-size: 25px;
+    }
+    .back{
+        color: black;
+        padding-top: 3px;
+    }
+    .brackets{
+        padding-top: 3px;
+    }
+</style>
+<div class="container">
 <h1>{{ include.name }}</h1>
-
-<h2>Description</h2>
+<div class="icon-description">
+    <i class="uil uil-edit social-icons icons"></i>
+    <h2>Description</h2>
+</div>
 <p>{{ include.description }}</p>
-
-<h2>Favourite programming languages</h2>
+<div class="icon-description">
+    <i class="uil uil-brackets-curly social-icons icons brackets"></i>
+    <h2>Favourite programming languages</h2>
+</div>
 <p>{{ include.fav-programming-language}}</p>
-
-<h2>Interests outside of technology</h2>
+<div class="icon-description">
+    <i class="uil uil-file-heart social-icons icons"></i>
+    <h2>Interests outside of technology</h2>
+</div>
 <p>{{ include.interests }}</p>
-
-<h2>University</h2>
+<div class="icon-description">
+    <i class="uil uil-university social-icons icons"></i>
+    <h2>University</h2>
+</div>
 <p>{{ include.university }}</p>
+<a id="back" href="../index.html">
+<div class="icon-description ">
+    <i class="uil uil-backward social-icons icons back"></i>
+    <h2>Go to homepage</h2>
+</div>
+</a>
+</div>
