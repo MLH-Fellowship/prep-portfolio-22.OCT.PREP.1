@@ -179,6 +179,23 @@ layout: page
   date: Summer 2021
   page-name: project
 ```
+## Add blog posts
+
+1. Make a new `.md` file inside the `_posts` folder with naming convention `YYYY-MM-DD-blog-post-name.md` where date is represented in YYYY-MM-DD format followed by your blog title.
+2. - Add the front matter at the top of your markdown file (see below) and a square image for your thumbnail in `\assets\img\blogs` folder..
+   - Change the title to the name of your blog post, the author to your name and the img_name in front matter with your file name.
+3. Write your blog page and format it with markdown syntax!
+
+Front matter for blog post markdown file post.
+
+```
+---
+title: Your blog title
+layout: page
+author: Your name
+img_name: image-name.jpg
+---
+```
 
 ## Development
 
