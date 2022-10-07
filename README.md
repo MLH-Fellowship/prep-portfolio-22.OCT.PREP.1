@@ -68,7 +68,7 @@ rvm --default use ruby
 gem install bundler
 ```
 
-- `Step 4:` Install dependencies
+- `Step 4`: Install dependencies
 
 ```bash
 bundle install
@@ -99,7 +99,7 @@ sudo apt-get install ruby ruby-dev
 
 _You can skip this if you have the bundler installed on your system. Make sure it is the latest stable version._
 
-Run the following command on terminal.
+Run the following command on the terminal.
 
 ```bash
 sudo gem install bundler
