@@ -17,4 +17,7 @@ layout: default
 
 <div class="container page">
     {{ content }}
+    {% if page.date and page.author %}
+    <p>Published on {{ page.date | date_to_string }} by {{ page.author }}</p>
+    {% endif %}
 </div>
