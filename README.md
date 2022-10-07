@@ -116,6 +116,20 @@ bundle install --path vendor/bundle
 ```bash
 bundle exec jekyll serve
 ```
+### Docker Development Environment 
+
+`!!! Having a running Docker Daemon is a must. !!!` <br>
+You can go ahead and get your Docker Engine from the official [Docker Website](https://docs.docker.com/engine/install/)
+
+#### Setup 
+```console
+$ git clone https://github.com/MLH-Fellowship/prep-portfolio-22.OCT.PREP.1.git
+$ cd prep-portfolio-22.OCT.PREP.1/
+$ docker-compose up
+```
+The project will now be live at **localhost:4000** 
+
+Since the repository gets mounted on the container, you can go ahead and start your development journey on the same repository. Simply make your changes, save them, refresh your browser to see the updated changes.
 
 ## Make your own!
 
@@ -180,11 +194,4 @@ layout: page
   page-name: project
 ```
 
-## Development
 
-If you want to test it locally or add some new features, run the below commands. Make sure to have Ruby and Bundler installed.
-
-```
-bundle install --path vendor/bundle
-bundle exec jekyll serve
-```
