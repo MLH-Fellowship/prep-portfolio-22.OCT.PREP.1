@@ -4,16 +4,32 @@
 <html lang="en">
 {% include header.html %}
 
-<body>
-    {% include navbar.html %}
+<body style="padding: 0; margin: 0;">
+    <div id="site-loader" style="position:absolute; top:0; left:0; display:flex; flex-direction: column; align-items: center; justify-content: center; z-index:999; width:100vw; height:100vh; background-color: #133667;">
+        <div class="site-loader__animation">
+            <img height="200px" src="./assets/img/loader.gif" />
+        </div>
+        
+        <div class="site-loader__qod" style="font-weight: 700; font-size: 22px; width: 30vw; text-align: center; margin-top: 20px;">
+            <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff;"><span style="color: green;">Pro Tip:</span><q>The MLH Fellowship runs year-round with batches starting every few months.</q></p>
+        </div>
+    </div>
 
-    {% include profile.html %}
-    
-    {% include description.html %}
-    
-    {% include projects.html %}
+    <div id="wrapper" style="display:none;">
+        {% include navbar.html %}
 
-    {% include footer.html %}
+        {% include profile.html %}
+
+        {% include description.html %}
+        
+        {% include maps.html %}
+
+        {% include projects.html %}
+
+        {% include podStats.html %}
+
+        {% include footer.html %}
+    </div>
 </body>
 
 </html>
