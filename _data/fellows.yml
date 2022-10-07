@@ -1,10 +1,10 @@
 - name: Sudhanshu Kumar
   img: sudhanshu.jpg
   location: Odisha, India
-  linkedin:
-  github:
-  twitter:
-  resume:
+  linkedin: "https://www.linkedin.com/in/sudhanshublaze/"
+  github: "https://github.com/SudhanshuBlaze"
+  twitter: "https://twitter.com/SudhanshuBlaze"
+  resume: "https://sudhanshukumar.notion.site/Resume-56bf1b2d1d2447c4b743a03bfa0ad504"
 
 - name: Riffat Khan
   img: riffat.jpg
