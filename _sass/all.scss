@@ -8,6 +8,7 @@
 @import 'footer';
 @import 'maps';
 @import 'scroller';
+@import 'projects';
 
 .card-container {
     display: grid;
@@ -69,12 +70,10 @@ h2 {
     font-size: 1.2em;
 }
 
-.projects .title:hover {
-  color: var(--link-color);
-}
-
-.projects .location:hover {
-  color: var(--link-color);
+.projects {
+  background-color: transparent;
+  padding: 0;
+  border: none;
 }
 
 .project-row {
