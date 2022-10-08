@@ -1,6 +1,6 @@
 .projects {
     perspective: 1000px; // useful for 3D flip effect on project card
-    width: 325px;
+    width: 350px;
     height: 325px;
 
     .card-inner {
@@ -79,7 +79,7 @@
 
 @media only screen and (max-width: 360px) {
     .projects {
-        width: 280px;
-        height: 280px;
+        width: 325px;
+        height: 300px;
     }
 }

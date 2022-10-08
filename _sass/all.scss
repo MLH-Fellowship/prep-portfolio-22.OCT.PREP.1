@@ -25,9 +25,17 @@
     margin-right: 0.5rem;
 }
 
+.project-card {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @media only screen and (max-width: 1500px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-card {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -35,11 +43,19 @@
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .project-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .card-container {
     grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -74,6 +90,7 @@ h2 {
   background-color: transparent;
   padding: 0;
   border: none;
+  margin: 20px auto;
 }
 
 .project-row {
