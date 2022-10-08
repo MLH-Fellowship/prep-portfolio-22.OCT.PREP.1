@@ -1,0 +1,72 @@
+<div class="wrapper">
+        <div class="nav-logo" id="side">
+            <img src="./assets/img/mlh-prep.png" />
+        </div>
+
+        <div class="links">
+            <a href="#">Locate Pod Members</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#projects">Projects</a>
+            <a href="#podStats">Pod Stats</a>
+        </div>
+  
+        <a href="#" id="menu" class="menu" onclick='clickMenu()'>☰</a>
+        
+        <div class="link">
+            <a href="#">Locate Pod Members</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#projects">Projects</a>
+            <a href="#podStats">Pod Stats</a>
+        </div>
+</div>
+
+<script>
+    
+  //   logo shift on scroll
+  wrapper = document.querySelector(".wrapper");
+  links = document.querySelector(".links");
+  side=document.getElementById("side")
+  window.addEventListener("scroll", (event) => {
+    let scrollY = this.scrollY;
+    if (scrollY > 100) {
+      side.style.display="flex";
+      side.style.width="20%";
+      wrapper.style.position = "fixed";
+      links.style.width="80%";
+    } else {
+      side.style.display="none";
+      side.style.width="0%";
+      wrapper.style.position = "sticky";
+      links.style.width="100%";
+    }
+  });
+
+  // responsive navbar
+  menu=document.getElementById("menu")
+  link = document.querySelector(".link");
+
+  function clickMenu(){
+    if(menu.innerHTML == "☰"){
+        menu.innerHTML="X"
+        link.style.display = "flex";
+    }
+    else{
+        menu.innerHTML = "☰"
+        link.style.display = "none";
+    }
+}
+
+  window.addEventListener("resize", (event) => {
+    if (screen.width < 780) {      
+      menu.style.display="flex";
+      link.style.display="none";
+      links.style.display="none";
+      console.log("screen")
+    }
+    else{
+      menu.style.display="none";
+      link.style.display="none";
+      links.style.display="flex";
+    }
+  });
+</script>
