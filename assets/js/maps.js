@@ -7,7 +7,7 @@ let initZoom = 4;       // defines the inital zoom level
 
 // intiailizing map object using Leaflet object L
 let map = L.map("map").setView([initFocus.latitude, initFocus.longitude], initZoom);
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+L.tileLayer("http://a.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     minZoom: 2,
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -127,7 +127,7 @@ const fellows = [
     {
         lat: 22.5726,
         long: 88.3639,
-        pic: 'depayan.jpg',
+        pic: 'deepayan.jpg',
         name: 'Deepayan Mukherjee',
         location: 'Kolkata, India',
         github: ' https://github.com/Ciggzy1312',
