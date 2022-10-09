@@ -147,7 +147,7 @@ const fellows = [
     {
         lat: 19.306801,
         long: 55.794868,
-        pic: 'mlh.png',
+        pic: 'riffat.jpg',
         name: 'Riffat Khan',
         location: 'Dubai, UAE',
         github: 'https://www.github.com/',
@@ -155,16 +155,15 @@ const fellows = [
         role: 'Fellow',
     },
     {
-        lat: 20.306801,
-        long: 81.794868,
-        pic: 'mlh.png',
+        lat: 20.9517,
+        long: 85.0985,
+        pic: 'sudhanshu.jpg',
         name: 'Sudhanshu Kumar',
-        location: 'Odisha',
+        location: 'Odisha, India',
         github: 'https://www.github.com/',
         linkedin: 'https://www.linkedin.com',
         role: 'Fellow',
     }
-//Todo: Add Akshita's details
 ];
 
 let popup;
