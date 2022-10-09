@@ -1,31 +1,48 @@
-<style>
-  .project-card{
-    display: flex;
-  }
-  .project-desc{
-    width: 350px;
-  }
-</style>
 <h2 id="projects">Projects</h2>
 <div class="card-container project-card">
     {% for item in site.data.projects %}
-    {% if item.page-name %}
-    <a href="/projects/{{ item.page-name }}">
-    {% else %}
-    <a>
-    {% endif %}
-      <div class="card projects project-desc">
-        <div class="info">
-          <p class="title">{{ item.title }}</p>
-          <p class="location">{{ item.event }}</p>
-          <p class="dates">{{ item.date }}</p>
-          <div class="social-icons">
-            <a href= {{ item.github }} target="_blank" class="social-icon"><i class="uil uil-github"></i></a>
-            <a href={{ item.live }} target="_blank" class="social-icon"><i class="uil uil-globe"></i></a>
-        </div>
+      <div class="card projects">
+        <div class="card-inner">
+          <div class="info card-front">
+            {% if item.page-name %}
+            <a href="/projects/{{ item.page-name }}">
+            {% else %}
+            <a>
+            {% endif %}
+            <img class="project-preview" src="/assets/img/social-link.jpg" alt="{{ item.title }} project" />
+            </a>
+  
+            {% if item.page-name %}
+            <a href="/projects/{{ item.page-name }}">
+            {% else %}
+            <a>
+            {% endif %}
+            <p class="title">{{ item.title }}</p>
+            </a>
+            <p class="location">{{ item.event }}</p>
+            <p class="dates">{{ item.date }}</p>
+  
+            <div class="flip-left">
+              <button class="project-btn left-flip-btn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div class="info card-back">
+            <p class="title">About the Project</p>
+            <p class="description">{{ item.description }}</p>
+
+            <div class="social-icons">
+              <a href= {{ item.github }} target="_blank" class="social-icon"><i class="uil uil-github"></i></a>
+              <a href={{ item.live }} target="_blank" class="social-icon"><i class="uil uil-globe"></i></a>
+            </div>
+            
+            <div class="flip-right">
+              <button class="project-btn right-flip-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+          </div>
         </div>
       </div>
-    </a>
     {% endfor %}
   </div>
+  <script type="text/javascript" src="./assets/js/flipCard.js"></script>
   
