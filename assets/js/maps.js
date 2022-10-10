@@ -7,7 +7,7 @@ let initZoom = 4;       // defines the inital zoom level
 
 // intiailizing map object using Leaflet object L
 let map = L.map("map").setView([initFocus.latitude, initFocus.longitude], initZoom);
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+L.tileLayer("http://a.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     minZoom: 2,
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -64,7 +64,7 @@ const fellows = [
         linkedin: 'https://www.linkedin.com/in/swatishree-mahapatra-a2251620a',
         role: 'Fellow',
     },
- {
+    {
       lat: 19.075983,
         long: 72.877655,
         pic: 'bhavneet.jpg',
@@ -94,17 +94,17 @@ const fellows = [
         linkedin: 'https://www.linkedin.com/in/akankshakushwaha/',
         role: 'Fellow',
     },
- {
+    {
         lat: 26.5455,
         long: 87.8942,
-        pic: 'niyoj.png',
+        pic: 'niyoj.jpg',
         name: ' Niyoj Oli',
         location: 'Jhapa, Nepal',
         github: ' https://github.com/niyoj',
         linkedin: ' https://linkedin.com/in/niyoj',
         role: 'Fellow',
     },
- {
+    {
         lat: 28.5355,
         long: 77.3910,
         pic: 'neelaksh.jpg',
@@ -114,7 +114,7 @@ const fellows = [
         linkedin: ' https://www.linkedin.com/in/neelaksh-singh/',
         role: 'Fellow',
     },
- {
+    {
         lat: 19.0760,
         long: 72.8777,
         pic: 'devansu.jpg',
@@ -124,17 +124,17 @@ const fellows = [
         linkedin: 'https://www.linkedin.com/in/devansu-yadav/',
         role: 'Fellow',
     },
- {
+    {
         lat: 22.5726,
         long: 88.3639,
-        pic: 'depayan.jpg',
+        pic: 'deepayan.jpg',
         name: 'Deepayan Mukherjee',
         location: 'Kolkata, India',
         github: ' https://github.com/Ciggzy1312',
         linkedin: 'https://www.linkedin.com/in/deepayan-mukherjee-a7ba821ab/',
         role: 'Fellow',
     },
- {
+    {
         lat: 28.6139,
         long: 77.2090,
         pic: 'gaurav.jpg',
@@ -144,27 +144,26 @@ const fellows = [
         linkedin: 'https://www.linkedin.com/in/gaurav-gulati-633b201bb/',
         role: 'Fellow',
     },
- {
+    {
         lat: 19.306801,
         long: 55.794868,
-        pic: 'mlh.png',
+        pic: 'riffat.jpg',
         name: 'Riffat Khan',
         location: 'Dubai, UAE',
         github: 'https://www.github.com/',
         linkedin: 'https://www.linkedin.com',
         role: 'Fellow',
     },
- {
-        lat: 20.306801,
-        long: 81.794868,
-        pic: 'mlh.png',
+    {
+        lat: 20.9517,
+        long: 85.0985,
+        pic: 'sudhanshu.jpg',
         name: 'Sudhanshu Kumar',
-        location: 'Odisha',
+        location: 'Odisha, India',
         github: 'https://www.github.com/',
         linkedin: 'https://www.linkedin.com',
         role: 'Fellow',
-    },
-//Todo: Add Akshita's details
+    }
 ];
 
 let popup;

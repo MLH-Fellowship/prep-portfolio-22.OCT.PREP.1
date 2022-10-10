@@ -10,29 +10,35 @@
     height: 230px;
   }
 </style>
+
 <h2>Meet the Pod</h2>
+
 <div class="card-container">
   {% for item in site.data.fellows %}
-  <div class="card profile-card">
-    <div class="info">
+    <div class="card profile-card">
+      <div class="info">
         <img class="pfp" src="./assets/img/fellows/{{ item.img }}">
-      <p class="title"> <a href="/fellows/{{ item.page }}">{{ item.name }}</a></p>
-      <p class="location">{{ item.location }}</p>
-      <div class="social-icons">
-        <a href={{ item.linkedin }} target="_blank" class="social-icon"
-          ><i class="uil uil-linkedin"></i
-        ></a>
-        <a href={{ item.github }} target="_blank" class="social-icon"
-          ><i class="uil uil-github"></i
-        ></a>
-        <a href={{ item.twitter }} target="_blank" class="social-icon"
-          ><i class="uil uil-twitter"></i
-        ></a>
-        <a href={{ item.resume }} target="_blank" class="social-icon"
-          ><i class="uil uil-file"></i
-        ></a>
+        <p class="title"> <a href="/fellows/{{ item.page }}">{{ item.name }}</a></p>
+        <p class="location">{{ item.location }}</p>
+        
+        <div class="social-icons">
+          <a href={{ item.linkedin }} target="_blank" class="social-icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          
+          <a href={{ item.github }} target="_blank" class="social-icon">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href={{ item.twitter }} target="_blank" class="social-icon">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          
+          <a href={{ item.resume }} target="_blank" class="social-icon">
+            <i class="fa-solid fa-file"></i>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
   {% endfor %}
 </div>
