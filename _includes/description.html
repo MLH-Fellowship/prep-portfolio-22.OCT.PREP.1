@@ -4,10 +4,40 @@
     width: 100px;
     margin-bottom: 2px;
   }
+
   .profile-card{
     padding-top: 3px;
     padding-bottom: 3px;
     height: 230px;
+  }
+
+  .profile-card {
+    color: var(--text-color);
+  }
+
+  .profile-card .title {
+    font-size: 500;
+    font-weight: bold;
+  }
+
+  .profile-card .location, .profile-card .description, .profile-card .author {
+    font-size: medium;
+    font-weight: 400;
+  }
+
+  .profile-card .dates {
+    font-size: small;
+    color: var(--date-color);
+  }
+
+  .img-div{
+    display: inline-block;
+    margin: auto 10px auto auto;
+  }
+
+  .info-div{
+    display: inline-block;
+    margin: auto auto auto 10px;
   }
 </style>
 
@@ -16,29 +46,32 @@
 <div class="card-container">
   {% for item in site.data.fellows %}
     <div class="card profile-card">
-      <div class="info">
-        <img class="pfp" src="./assets/img/fellows/{{ item.img }}">
-        <p class="title"> <a href="/fellows/{{ item.page }}">{{ item.name }}</a></p>
-        <p class="location">{{ item.location }}</p>
-        
-        <div class="social-icons">
-          <a href={{ item.linkedin }} target="_blank" class="social-icon">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          
-          <a href={{ item.github }} target="_blank" class="social-icon">
-            <i class="fa-brands fa-github"></i>
-          </a>
-
-          <a href={{ item.twitter }} target="_blank" class="social-icon">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          
-          <a href={{ item.resume }} target="_blank" class="social-icon">
-            <i class="fa-solid fa-file"></i>
-          </a>
+        <div class="img-div">
+          <img class="pfp" src="./assets/img/fellows/{{ item.img }}">
         </div>
-      </div>
+
+        <div class="info-div">
+          <p class="title"> <a href="/fellows/{{ item.page }}">{{ item.name }}</a></p>
+          <p class="location">{{ item.location }}</p>
+          
+          <div class="social-icons">
+            <a href={{ item.linkedin }} target="_blank" class="social-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            
+            <a href={{ item.github }} target="_blank" class="social-icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href={{ item.twitter }} target="_blank" class="social-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            
+            <a href={{ item.resume }} target="_blank" class="social-icon">
+              <i class="fa-solid fa-file"></i>
+            </a>
+          </div>
+        </div>
     </div>
   {% endfor %}
 </div>
