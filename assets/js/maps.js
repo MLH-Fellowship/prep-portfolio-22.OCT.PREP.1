@@ -35,8 +35,8 @@ const fellows = [
         role: 'Fellow',
     },
     {
-        lat: 19.075983,
-        long: 72.877655,
+        lat: 18.9894,
+        long: 73.1175,
         pic: 'siddhi.jpg',
         name: 'Siddhi Bhanushali',
         location: 'Mumbai, India',
@@ -65,8 +65,8 @@ const fellows = [
         role: 'Fellow',
     },
     {
-      lat: 19.075983,
-        long: 72.877655,
+        lat: 19.2183,
+        long: 72.9781,
         pic: 'bhavneet.jpg',
         name: 'Bhavneet Kaur',
         location: 'Mumbai, India',
@@ -85,8 +85,8 @@ const fellows = [
         role: 'Fellow',
     },
     {
-        lat: 28.535517,
-        long: 77.391029,
+        lat: 28.4610,
+        long: 77.4969,
         pic: 'akanksha.jpg',
         name: 'Akanksha Kushwaha',
         location: 'Noida, India',
