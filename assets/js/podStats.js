@@ -1,7 +1,3 @@
-const contributionFetch = fetch(
-    "https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.OCT.PREP.1/contributors"
-);
-
 function displayFetch(records) {
     let username = document.querySelectorAll(".username");
     let pic = document.querySelectorAll(".pic");
@@ -14,24 +10,36 @@ function displayFetch(records) {
     }
 }
 
-contributionFetch
-.then((data) => {
-    return data.json();
+Promise.all([
+    fetch("https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.OCT.PREP.1/contributors"),
+    fetch("https://api.github.com/repos/MLH-Fellowship/prep-project-22.OCT.PREP.1/contributors")
+])
+.then((responses)=>{
+    return Promise.all(responses.map(r => r.json()))
 })
-.then((resp) => {
+.then((data) => {
+    const resp1 = data[0];
+    const resp2 = data[1];
     let contributorsList = [];
     const removeList = new Set(['akshitadixit', 'marcnjaramillo']);
-    for (const ele of resp) {
+    const contributorsMap = new Map();
+        for (const ele of resp1) {
             if(removeList.has(ele.login)===false){
-                const temp = {
-                    username: ele.login,
-                    avatarUrl: ele.avatar_url,
-                    statsProfileUrl: ele.html_url,
-                    contributions: ele.contributions,
-                };
-                contributorsList.push(temp);
+                contributorsMap.set(ele.login, ele.contributions);
             }
         }
+        for (const ele of resp2) {
+                if(removeList.has(ele.login)===false){
+                    const currContributions = contributorsMap.get(ele.login);
+                    const temp = {
+                        username: ele.login,
+                        avatarUrl: ele.avatar_url,
+                        statsProfileUrl: ele.html_url,
+                        contributions: currContributions + ele.contributions
+                    };
+                    contributorsList.push(temp);
+                }
+            }
 
         // adding 15 statsCards
         let statsCards = document.getElementsByClassName("statsCards")[0];
