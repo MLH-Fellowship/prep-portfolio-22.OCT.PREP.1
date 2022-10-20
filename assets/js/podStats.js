@@ -40,7 +40,10 @@ Promise.all([
                     contributorsList.push(temp);
                 }
             }
-
+            
+        contributorsList.sort((a, b)=>{
+            return b.contributions - a.contributions;
+        });
         // adding 15 statsCards
         let statsCards = document.getElementsByClassName("statsCards")[0];
         for (let i = 0; i < contributorsList.length; i++) {
